@@ -1,0 +1,164 @@
+h1 {
+  font-family: "SF";
+  color: white;
+  font-size: 60px;
+  text-align: center;
+}
+
+h2 {
+  font-family: "SF-Bold";
+  color: white;
+  font-size: 40px;
+}
+
+h3 {
+  font-family: "SF-Bold-h3";
+  color: white;
+  font-size: 25px;
+}
+
+h4 {
+  font-family: "SF-Bold-h4";
+  color: white;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 20px;
+}
+
+body {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+p {
+  font-family: "SF-Body";
+  font-size: 25px;
+  color: white;
+  text-align: justify;
+}
+
+.titleSkills{
+    font-family: "Skills-Font";
+    font-size: 35px;
+    color: white;
+    border-bottom: solid;
+}
+
+@font-face {
+    font-family: "Skills-Font";
+    src: url("font2/otf/toledo-serial-bold.ttf") format("opentype");
+  }
+
+@font-face {
+  font-family: "SF";
+  src: url("font2/otf/SFNSDisplay-Thin.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "SF-Bold";
+  src: url("font2/otf/SFNSDisplay-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "SF-Bold-h3";
+  src: url("font2/otf/SFNSText-Light.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "SF-Bold-h4";
+  src: url("font2/otf/SFNSText-RegularG1.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "SF-Body";
+  src: url("font2/otf/SFNSDisplay-Regular.otf") format("opentype");
+}
+
+html {
+  background-color: #252526;
+  /* background-color: white; */
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.imgTitle {
+  border-radius: 50%;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+.columnSkill {
+    float: left;
+    width: 20%;
+  }
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+:root {
+  --primary-color: #fff; /* try #212121 also for dark mode */
+  --background-color: #212121;
+  --font: sans-serif;
+}
+
+.timeline {
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.bnpimg {
+  margin-left: 80px;
+  margin-bottom: 10px;
+}
+
+/* Outer Layer with the timeline border */
+.outer {
+  border-left: 2px solid #333;
+}
+
+/* Card container */
+.card {
+  position: relative;
+  margin: 0 0 20px 20px;
+  padding: 10px;
+  background: #333;
+  color: gray;
+  border-radius: 8px;
+}
+
+/* Information about the timeline */
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/* Title of the card */
+/* .title {
+    color: orangered;
+    position: relative;
+  } */
+
+/* Timeline dot  */
+.title::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 999px;
+  left: -39px;
+  border: 3px solid orangered;
+}
